@@ -4,4 +4,4 @@ generatorOptions:
   disableNameSuffixHash: true
 
 resources:
-- ../../base/contour/
+- ../../apps/base/contour
