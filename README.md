@@ -7,7 +7,7 @@ We also borrowed some of the Prometheus bits from Rick @ https://github.com/rroq
 
 When you create a clustergroup, point TMC at the corresponding `clustergroups/<cluster_group>` folder.
 
-This will create two major Kustomizations on each cluster in the group
+This will create two Kustomizations on each cluster in the group
 
 1. It will leverage secretgen-controller to copy the name of the cluster to a secret in the ` tanzu-continuousdelivery-resources` namespace
 2. It then uses that cluster name as a variable to point a Kustomization at `cluster/<clustername>`
