@@ -4,7 +4,7 @@ generatorOptions:
   disableNameSuffixHash: true
 
 resources:
-- ../../apps/base/prometheus
+- ../../base/prometheus
 
 patches:
 - target:
