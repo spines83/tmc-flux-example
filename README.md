@@ -13,3 +13,5 @@ This will create two major Kustomizations on each cluster in the group
 2. It then uses that cluster name as a variable to point a Kustomization at `cluster/<clustername>`
 
 In this case, `pines-homelab-dev` and `pines-homelab-qa` are both configured to deploy the prometheus community stack, but in dev we will expose grafana via a LoadBalancer.
+
+![](img/clustergroup.png)
