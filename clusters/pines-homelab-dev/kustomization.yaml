@@ -5,3 +5,10 @@ generatorOptions:
 
 resources:
 - ../../apps/base/prometheus
+
+patches:
+- target:
+    kind: HelmRelease
+    name: kube-prometheus-stack
+    namespace: prometheus
+  path: prometheus-values.yaml
