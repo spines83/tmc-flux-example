@@ -5,6 +5,7 @@ generatorOptions:
 
 resources:
 - ../../base/prometheus
+- ../../base/cert-manager
 
 patches:
 - target:
