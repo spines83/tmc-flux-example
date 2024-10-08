@@ -1,7 +1,7 @@
 ### Credits
 This is a minimal version of Will's TMC Multitenant example @ https://github.com/warroyo/flux-tmc-multitenant 
 
-We're also borrowed some of the Prometheus bits from Rick @ https://github.com/rroque99/tmc-poc
+We also borrowed some of the Prometheus bits from Rick @ https://github.com/rroque99/tmc-poc
 
 ### Summary
 
