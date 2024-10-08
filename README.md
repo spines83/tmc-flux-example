@@ -15,3 +15,27 @@ This will create two major Kustomizations on each cluster in the group
 In this case, `pines-homelab-dev` and `pines-homelab-qa` are both configured to deploy the prometheus community stack, but in dev we will expose grafana via a LoadBalancer.
 
 ![](img/clustergroup.png)
+
+### Deploying to TMC
+
+#### Add your GitRepository
+
+Navigate to Cluster Groups > (Your cluster group) > Add-Ons > Sources > Git Repositories
+
+Add a Git Repository with the following
+* Name = infra-gitops
+* Repository URL = https://github.com/spines83/tmc-flux-example.git
+* Repository Credential = (No Credentials Needed)
+* Advanced Settings/Branch = Main
+
+(Update the above with your repository info, if you change the name from `infra-gitops`, update the refs in the associated flux objects)
+
+#### Deploy the root Kustomization
+
+Navigate to Cluster Groups > (Your cluster group) > Add-Ons > Continuous Delivery > Installed Kustomizations
+
+Add a Kustomization with the following
+* Name = clustergroup
+* Repository = infra-gitops
+* Path = /clustergroups/pines-homelab
+* (Optional) Advanced Settings/Prune = Enabled
