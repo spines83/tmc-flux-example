@@ -1,0 +1,9 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: dynatrace
+spec:
+  type: "oci"
+  interval: 120m
+  url: oci://public.ecr.aws/dynatrace

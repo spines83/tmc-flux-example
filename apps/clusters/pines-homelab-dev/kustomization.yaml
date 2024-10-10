@@ -6,6 +6,7 @@ generatorOptions:
 resources:
 - ../../base/prometheus
 - ../../base/cert-manager
+- ../../base/dynatrace-operator
 
 patches:
 - target:
