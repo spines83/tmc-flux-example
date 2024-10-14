@@ -4,6 +4,9 @@ metadata:
   name: kube-prometheus-stack
   namespace: prometheus
 spec:
+  # chart:
+  #   spec:
+  #     version: "59.x"
   values:
     grafana:
       service:
