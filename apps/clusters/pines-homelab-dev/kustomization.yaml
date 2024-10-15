@@ -4,9 +4,11 @@ generatorOptions:
   disableNameSuffixHash: true
 
 resources:
+- ../../base/dynatrace-operator
 - ../../base/prometheus
 - ../../base/cert-manager
-- ../../base/dynatrace-operator
+- namespace.yaml
+- rbac.yaml
 
 patches:
 - target:
