@@ -5,7 +5,7 @@ generatorOptions:
 
 resources:
 #- ../../infrastructure/catalog/cert-manager
-- ../../infrastructure/catalog/prometheus
+# - ../../infrastructure/catalog/prometheus
 
 #patches:
 #- target:
