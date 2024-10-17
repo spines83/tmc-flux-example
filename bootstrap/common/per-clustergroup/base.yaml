@@ -1,14 +1,17 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: cluster-gitops
+  name: clustergroup-gitops
   namespace: tanzu-continuousdelivery-resources
 spec:
-  interval: 10m0s
-  path: clusters/${cluster_name}
+  interval: 1m0s
+  path: clustergroups/${clustergroup_name}
+  components: 
+    - ../../clusters/${cluster_name}/clustergroup-patches
   prune: true
   postBuild:
     substitute:
+      clustergroup_name: ${clustergroup_name}
       cluster_name: ${cluster_name}
   sourceRef:
     kind: GitRepository

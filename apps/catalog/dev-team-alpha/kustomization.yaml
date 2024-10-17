@@ -4,4 +4,5 @@ generatorOptions:
   disableNameSuffixHash: true
 
 resources:
-- ../../base/cluster-name-secret/
+- namespace.yaml
+- rbac.yaml

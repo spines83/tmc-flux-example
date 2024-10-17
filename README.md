@@ -14,8 +14,6 @@ This will create two Kustomizations on each cluster in the group
 
 In this case, `pines-homelab-dev` and `pines-homelab-qa` are both configured to deploy the prometheus community stack, but in dev we will expose grafana via a LoadBalancer.
 
-![](img/clustergroup.png)
-
 ### Deploying to TMC
 
 #### Add your GitRepository

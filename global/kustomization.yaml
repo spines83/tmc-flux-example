@@ -4,5 +4,4 @@ generatorOptions:
   disableNameSuffixHash: true
 
 resources:
-- ../../base/prometheus
-- ../../base/cert-manager
+- ../infrastructure/catalog/cert-manager
