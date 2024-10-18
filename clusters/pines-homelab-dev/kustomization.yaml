@@ -4,9 +4,9 @@ generatorOptions:
   disableNameSuffixHash: true
 
 resources:
-#- ../../infrastructure/catalog/cert-manager
-#- ../../infrastructure/catalog/prometheus
-- ../../apps/catalog/dev-team-alpha
+#- ../../catalog/infrastructure/cert-manager
+#- ../../catalog/infrastructure/prometheus
+- ../../catalog/apps/dev-team-alpha
 
 #patches:
 #- target:

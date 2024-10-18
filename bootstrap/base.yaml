@@ -6,7 +6,7 @@ metadata:
   namespace: tanzu-continuousdelivery-resources
 spec:
   interval: 1m0s
-  path: ./infrastructure/catalog/cluster-name-secret
+  path: ./catalog/infrastructure/cluster-name-secret
   prune: true
   sourceRef:
     kind: GitRepository

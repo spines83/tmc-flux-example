@@ -4,4 +4,4 @@ generatorOptions:
   disableNameSuffixHash: true
 
 resources:
-- ../infrastructure/catalog/cert-manager
+- ../catalog/infrastructure/cert-manager
