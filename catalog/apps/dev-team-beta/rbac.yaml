@@ -2,7 +2,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: dev-team-rbac
-  namespace: dev-team-alpha
+  namespace: dev-team-beta
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -10,13 +10,13 @@ roleRef:
 subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: Group
-  name: sso:App_A_Developer@tanzu.home
+  name: sso:App__B_Developer@tanzu.home
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: dev-team-rbac
-  namespace: dev-team-alpha
+  namespace: dev-team-beta
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -24,4 +24,4 @@ roleRef:
 subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: Group
-  name: sso:App_A_Admin@tanzu.home
+  name: sso:App_B_Admin@tanzu.home

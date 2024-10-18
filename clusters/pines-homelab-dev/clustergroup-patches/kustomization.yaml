@@ -5,10 +5,10 @@ kind: Component
 #      apiVersion: helm.toolkit.fluxcd.io/v2beta1
 #      kind: HelmRelease
 #      metadata:
-#        name: cert-manager
+#        name: kube-prometheus-stack
 #      spec:
 #        chart:
 #          spec:
-#            version: "1.3.21"
+#            version: "59.x"
 #    target:
 #      kind: HelmRelease

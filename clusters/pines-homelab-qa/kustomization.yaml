@@ -4,14 +4,5 @@ generatorOptions:
   disableNameSuffixHash: true
 
 resources:
-#- ../../catalog/infrastructure/cert-manager
-#- ../../catalog/infrastructure/prometheus
-
-#patches:
-#- target:
-#    kind: HelmRelease
-#    name: cert-manager
-#  patch: |-
-#    - op: replace
-#      path: /spec/chart/spec/version
-#      value: 1.3.21
+- ../../catalog/apps/dev-team-alpha
+- ../../catalog/apps/dev-team-beta
